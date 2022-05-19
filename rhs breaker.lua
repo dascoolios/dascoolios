@@ -17,7 +17,7 @@ while true do
 
 game:GetService("ReplicatedStorage").Systems.Shop.DoItemAction:InvokeServer(unpack(args))
 local args = {
-    [1] = Vector3.new(0, 0, 0)
+    [1] = Vector3.new(lol, lol, lol)
 }
 
 game:GetService("ReplicatedStorage").Modules.ObjectCode.Toys.TPoseGrenade.ThrowGrenade:FireServer(unpack(args))
