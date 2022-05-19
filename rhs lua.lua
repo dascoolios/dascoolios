@@ -238,7 +238,7 @@ local function YDSTJ_fake_script() -- TextButton.LocalScript
 	local textButton = script.Parent
 	
 	local function onActivated()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/dascoolios/dascoolios/main/rhs%20breaker.lua", true))() 
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/dascoolios/dascoolios/main/breaker.lua", true))() 
 	end
 	
 	textButton.Activated:Connect(onActivated)
