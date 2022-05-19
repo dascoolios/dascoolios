@@ -19,7 +19,6 @@ local TextLabel_2 = Instance.new("TextLabel")
 local localplayer = Instance.new("TextButton")
 local AAAAB = Instance.new("ImageLabel")
 local Frame_6 = Instance.new("ImageLabel")
-local TextButton_4 = Instance.new("TextButton")
 
 --Properties:
 
@@ -227,171 +226,156 @@ Frame_6.ImageTransparency = 0.600
 Frame_6.SliceCenter = Rect.new(100, 100, 100, 100)
 Frame_6.SliceScale = 0.080
 
-TextButton_4.Parent = ScreenGui
-TextButton_4.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
-TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_4.BorderSizePixel = 5
-TextButton_4.Position = UDim2.new(0.680491567, 0, 0.0355140157, 0)
-TextButton_4.Size = UDim2.new(0, 87, 0, 22)
-TextButton_4.ZIndex = 6
-TextButton_4.Font = Enum.Font.Code
-TextButton_4.Text = "close"
-TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_4.TextScaled = true
-TextButton_4.TextSize = 14.000
-TextButton_4.TextWrapped = true
-
 -- Scripts:
 
-local function RJLRN_fake_script() -- visuals.LocalScript 
+local function VKQO_fake_script() -- visuals.LocalScript 
 	local script = Instance.new('LocalScript', visuals)
 
 	local textButton = script.Parent
-
+	
 	local function onActivated()
 		script.Parent.Parent.main.Frame.Visible = false
 	end
-
+	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(RJLRN_fake_script)()
-local function EIROFI_fake_script() -- main.LocalScript 
+coroutine.wrap(VKQO_fake_script)()
+local function CZPPYN_fake_script() -- main.LocalScript 
 	local script = Instance.new('LocalScript', main)
 
 	local textButton = script.Parent
-
+	
 	local function onActivated()
 		script.Parent.Frame.Visible = true
 	end
-
+	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(EIROFI_fake_script)()
-local function RFNQF_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(CZPPYN_fake_script)()
+local function MBDFH_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local textButton = script.Parent
-
+	
 	local function onActivated()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/dascoolios/dascoolios/main/rhs%20breaker.lua", true))() 
 	end
-
+	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(RFNQF_fake_script)()
-local function HINRU_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(MBDFH_fake_script)()
+local function TEIBKDQ_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local man = game.Players.LocalPlayer.Name
-
+	
 	local textButton = script.Parent
-
+	
 	local function onActivated()
 		game.Workspace.man.Head:destroy()
 	end
-
+	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(HINRU_fake_script)()
-local function JYYJQ_fake_script() -- localplayer.LocalScript 
+coroutine.wrap(TEIBKDQ_fake_script)()
+local function APZM_fake_script() -- localplayer.LocalScript 
 	local script = Instance.new('LocalScript', localplayer)
 
 	local textButton = script.Parent
-
+	
 	local function onActivated()
 		script.Parent.Parent.main.Frame.Visible = false
 	end
-
+	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(JYYJQ_fake_script)()
-local function WWPHOIG_fake_script() -- Frame.LocalScript 
+coroutine.wrap(APZM_fake_script)()
+local function RXWSAP_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
-
+	
 	local frame = script.Parent
-
-
-
+	
+	
+	
 	local dragToggle = nil
-
+	
 	local dragSpeed = 0.001
-
+	
 	local dragStart = nil
-
+	
 	local startPos = nil
-
-
-
+	
+	
+	
 	local function updateInput(input)
-
+	
 		local delta = input.Position - dragStart
-
+	
 		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-
+	
 			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-
+	
 		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-
+	
 	end
-
-
-
+	
+	
+	
 	frame.InputBegan:Connect(function(input)
-
+	
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-
+	
 			dragToggle = true
-
+	
 			dragStart = input.Position
-
+	
 			startPos = frame.Position
-
+	
 			input.Changed:Connect(function()
-
+	
 				if input.UserInputState == Enum.UserInputState.End then
-
+	
 					dragToggle = false
-
+	
 				end
-
+	
 			end)
-
+	
 		end
-
+	
 	end)
-
-
-
+	
+	
+	
 	UIS.InputChanged:Connect(function(input)
-
+	
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-
+	
 			if dragToggle then
-
+	
 				updateInput(input)
-
+	
 			end
-
+	
 		end
-
+	
 	end)
 end
-coroutine.wrap(WWPHOIG_fake_script)()
-local function IXAA_fake_script() -- TextButton_4.chin1 
-	local script = Instance.new('LocalScript', TextButton_4)
+coroutine.wrap(RXWSAP_fake_script)()
+local function ZPONMN_fake_script() -- Frame.shift 
+	local script = Instance.new('LocalScript', Frame)
 
-	local textButton = script.Parent
-
-	local function onActivated()
-		script.Parent.Parent.Frame.Visible = false
-		textButton.Text = "open"
-		script.Parent.chin.Disabled = false
-		script.Disabled = true
+	function keyPressed(input)
+		if input.KeyCode == Enum.KeyCode.RightShift then
+			script.Parent.Visible = false
+			script.Disabled = true
+			script.Parent.shiftrev.Disabled = false
+		end
 	end
-
-	textButton.Activated:Connect(onActivated)
+	
+	game:GetService("UserInputService").InputBegan:Connect(keyPressed)
 end
-coroutine.wrap(IXAA_fake_script)()
--- TextButton_4.chin is disabled.
+coroutine.wrap(ZPONMN_fake_script)()
+-- Frame.shiftrev is disabled.
