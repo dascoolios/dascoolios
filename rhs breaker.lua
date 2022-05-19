@@ -25,7 +25,6 @@ game:GetService("ReplicatedStorage").Modules.ObjectCode.Toys.TPoseGrenade.ThrowG
 game:GetService("ReplicatedStorage").Modules.ObjectCode.Toys.TPoseGrenade.ThrowGrenade:FireServer(unpack(args))
 game:GetService("ReplicatedStorage").Modules.ObjectCode.Toys.TPoseGrenade.ThrowGrenade:FireServer(unpack(args))
 game:GetService("ReplicatedStorage").Modules.ObjectCode.Toys.TPoseGrenade.ThrowGrenade:FireServer(unpack(args))
-game:GetService("ReplicatedStorage").Modules.ObjectCode.Toys.TPoseGrenade.ThrowGrenade:FireServer(unpack(args))
 wait(0.01)
 
  local args = {
