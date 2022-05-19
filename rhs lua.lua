@@ -15,7 +15,6 @@ local TextButton_2 = Instance.new("TextButton")
 local TextButton_3 = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
-local AABAB = Instance.new("ImageLabel")
 local Frame_6 = Instance.new("ImageLabel")
 local AAAAB = Instance.new("ImageLabel")
 
@@ -178,18 +177,6 @@ TextLabel_2.TextColor3 = Color3.fromRGB(130, 130, 130)
 TextLabel_2.TextSize = 18.000
 TextLabel_2.TextStrokeTransparency = 0.000
 TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
-
-AABAB.Name = "AABAB"
-AABAB.Parent = Frame
-AABAB.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-AABAB.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AABAB.Position = UDim2.new(0.035, 0, 0.928, 0)
-AABAB.Size = UDim2.new(0, 310, 0, 2)
-AABAB.ZIndex = 2
-AABAB.ImageColor3 = Color3.fromRGB(0, 0, 0)
-AABAB.ScaleType = Enum.ScaleType.Slice
-AABAB.SliceCenter = Rect.new(100, 100, 100, 100)
-AABAB.SliceScale = 0.080
 
 Frame_6.Name = "Frame"
 Frame_6.Parent = Frame
