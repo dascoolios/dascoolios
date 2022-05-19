@@ -208,7 +208,7 @@ AAAAB.SliceScale = 0.080
 
 -- Scripts:
 
-local function BJGSP_fake_script() -- visuals.LocalScript 
+local function MOMBTPO_fake_script() -- visuals.LocalScript 
 	local script = Instance.new('LocalScript', visuals)
 
 	local textButton = script.Parent
@@ -219,8 +219,8 @@ local function BJGSP_fake_script() -- visuals.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(BJGSP_fake_script)()
-local function OYRC_fake_script() -- main.LocalScript 
+coroutine.wrap(MOMBTPO_fake_script)()
+local function RAMYTL_fake_script() -- main.LocalScript 
 	local script = Instance.new('LocalScript', main)
 
 	local textButton = script.Parent
@@ -231,20 +231,34 @@ local function OYRC_fake_script() -- main.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(OYRC_fake_script)()
-local function YDSTJ_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(RAMYTL_fake_script)()
+local function PFHO_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local textButton = script.Parent
 	
 	local function onActivated()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/dascoolios/dascoolios/main/breaker.lua", true))() 
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/dascoolios/dascoolios/main/rhs%20breaker.lua", true))() 
 	end
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(YDSTJ_fake_script)()
-local function FXBVUPO_fake_script() -- Frame.LocalScript 
+coroutine.wrap(PFHO_fake_script)()
+local function PUIOGGG_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local man = game.Players.LocalPlayer.Name
+	
+	local textButton = script.Parent
+	
+	local function onActivated()
+		game.Workspace.man.Head:destroy()
+	end
+	
+	textButton.Activated:Connect(onActivated)
+end
+coroutine.wrap(PUIOGGG_fake_script)()
+local function XCAFS_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -317,4 +331,4 @@ local function FXBVUPO_fake_script() -- Frame.LocalScript
 	
 	end)
 end
-coroutine.wrap(FXBVUPO_fake_script)()
+coroutine.wrap(XCAFS_fake_script)()
