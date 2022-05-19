@@ -36,12 +36,10 @@ Frame.ZIndex = 2
 
 Frame_2.Name = "Frame"
 Frame_2.Parent = Frame
-Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame_2.BackgroundTransparency = 1.000
+Frame_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame_2.Position = UDim2.new(0.0259018056, 0, -0.00191288441, 0)
 Frame_2.Size = UDim2.new(0.0500000007, 300, 0.0500000007, 400)
 Frame_2.ZIndex = 0
-Frame_2.Image = "rbxassetid://3570695787"
 Frame_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
 Frame_2.ScaleType = Enum.ScaleType.Slice
 Frame_2.SliceCenter = Rect.new(100, 100, 100, 100)
@@ -66,8 +64,8 @@ Frame_4.BorderColor3 = Color3.fromRGB(53, 53, 53)
 Frame_4.BorderSizePixel = 2
 Frame_4.Position = UDim2.new(0.0531279258, 0, 0.0230905525, 0)
 Frame_4.Size = UDim2.new(0, 300, 0, 400)
-Frame_4.Image = "rbxassetid://5217727536"
-Frame_4.ImageTransparency = 0.950
+Frame_4.Image = "rbxassetid://2802034734"
+Frame_4.ImageTransparency = 0.500
 Frame_4.SliceCenter = Rect.new(100, 100, 100, 100)
 Frame_4.SliceScale = 0.080
 
@@ -159,7 +157,7 @@ TextLabel.Position = UDim2.new(0, 0, 0.970566273, 0)
 TextLabel.Size = UDim2.new(0, 300, 0, 11)
 TextLabel.Font = Enum.Font.Code
 TextLabel.Text = "version 0.0.1 by io#4884 ok thank you xx"
-TextLabel.TextColor3 = Color3.fromRGB(130, 130, 130)
+TextLabel.TextColor3 = Color3.fromRGB(177, 177, 177)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 12.000
 TextLabel.TextStrokeTransparency = 0.000
@@ -208,7 +206,7 @@ AAAAB.SliceScale = 0.080
 
 -- Scripts:
 
-local function MOMBTPO_fake_script() -- visuals.LocalScript 
+local function FVCS_fake_script() -- visuals.LocalScript 
 	local script = Instance.new('LocalScript', visuals)
 
 	local textButton = script.Parent
@@ -219,8 +217,8 @@ local function MOMBTPO_fake_script() -- visuals.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(MOMBTPO_fake_script)()
-local function RAMYTL_fake_script() -- main.LocalScript 
+coroutine.wrap(FVCS_fake_script)()
+local function RDJFAV_fake_script() -- main.LocalScript 
 	local script = Instance.new('LocalScript', main)
 
 	local textButton = script.Parent
@@ -231,8 +229,8 @@ local function RAMYTL_fake_script() -- main.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(RAMYTL_fake_script)()
-local function PFHO_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(RDJFAV_fake_script)()
+local function RKNOQZ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local textButton = script.Parent
@@ -243,8 +241,8 @@ local function PFHO_fake_script() -- TextButton.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(PFHO_fake_script)()
-local function PUIOGGG_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(RKNOQZ_fake_script)()
+local function DXXFWA_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local man = game.Players.LocalPlayer.Name
@@ -257,8 +255,8 @@ local function PUIOGGG_fake_script() -- TextButton_2.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(PUIOGGG_fake_script)()
-local function XCAFS_fake_script() -- Frame.LocalScript 
+coroutine.wrap(DXXFWA_fake_script)()
+local function FPUNNOE_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -331,4 +329,4 @@ local function XCAFS_fake_script() -- Frame.LocalScript
 	
 	end)
 end
-coroutine.wrap(XCAFS_fake_script)()
+coroutine.wrap(FPUNNOE_fake_script)()
