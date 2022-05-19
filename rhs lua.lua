@@ -114,23 +114,24 @@ TextButton.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
 TextButton.BackgroundTransparency = 0.400
 TextButton.BorderColor3 = Color3.fromRGB(42, 42, 42)
 TextButton.BorderSizePixel = 7
-TextButton.Position = UDim2.new(0.49333331, 0, 0.5, 0)
+TextButton.Position = UDim2.new(-0.00666669011, 0, 0.540000021, 0)
 TextButton.Size = UDim2.new(0, 200, 0, 50)
 TextButton.Font = Enum.Font.Nunito
-TextButton.Text = "tpose reality breaker"
+TextButton.Text = "tpose reality breaker      (use autoclicker)"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextStrokeColor3 = Color3.fromRGB(33, 33, 33)
 TextButton.TextStrokeTransparency = 0.000
 TextButton.TextWrapped = true
+TextButton.TextXAlignment = Enum.TextXAlignment.Left
 
 TextButton_2.Parent = Frame_5
 TextButton_2.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
 TextButton_2.BackgroundTransparency = 0.400
 TextButton_2.BorderColor3 = Color3.fromRGB(42, 42, 42)
 TextButton_2.BorderSizePixel = 7
-TextButton_2.Position = UDim2.new(0.49000001, 0, 1.55999994, 0)
+TextButton_2.Position = UDim2.new(0, 0, 1.15999997, 0)
 TextButton_2.Size = UDim2.new(0, 200, 0, 50)
 TextButton_2.Font = Enum.Font.Nunito
 TextButton_2.Text = "hide name"
@@ -146,7 +147,7 @@ TextButton_3.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
 TextButton_3.BackgroundTransparency = 0.400
 TextButton_3.BorderColor3 = Color3.fromRGB(42, 42, 42)
 TextButton_3.BorderSizePixel = 7
-TextButton_3.Position = UDim2.new(0.5, 0, 2.65999985, 0)
+TextButton_3.Position = UDim2.new(0, 0, 1.80999982, 0)
 TextButton_3.Size = UDim2.new(0, 200, 0, 50)
 TextButton_3.Font = Enum.Font.Nunito
 TextButton_3.Text = "not for use"
@@ -164,7 +165,7 @@ TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(0, 0, 0.970566273, 0)
 TextLabel.Size = UDim2.new(0, 300, 0, 11)
 TextLabel.Font = Enum.Font.Code
-TextLabel.Text = "version 2.0.1 by io#4884 ok thank you xx"
+TextLabel.Text = "io#4884 is  a skidder LLLLLLLLLL"
 TextLabel.TextColor3 = Color3.fromRGB(177, 177, 177)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 12.000
@@ -179,7 +180,7 @@ TextLabel_2.BorderSizePixel = 0
 TextLabel_2.Position = UDim2.new(0, 0, -0.0124348067, 0)
 TextLabel_2.Size = UDim2.new(0, 300, 0, 20)
 TextLabel_2.Font = Enum.Font.Code
-TextLabel_2.Text = "rhs gui fr frfrfrfr"
+TextLabel_2.Text = "rhs gui?!?!??!"
 TextLabel_2.TextColor3 = Color3.fromRGB(130, 130, 130)
 TextLabel_2.TextSize = 18.000
 TextLabel_2.TextStrokeTransparency = 0.000
@@ -213,7 +214,7 @@ TextButton_4.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
 TextButton_4.BackgroundTransparency = 0.400
 TextButton_4.BorderColor3 = Color3.fromRGB(42, 42, 42)
 TextButton_4.BorderSizePixel = 7
-TextButton_4.Position = UDim2.new(0.483333319, 0, 0.5, 0)
+TextButton_4.Position = UDim2.new(-0.00666669011, 0, 0.540000021, 0)
 TextButton_4.Size = UDim2.new(0, 200, 0, 50)
 TextButton_4.Font = Enum.Font.Nunito
 TextButton_4.Text = "speedhacks"
@@ -253,7 +254,7 @@ Frame_7.SliceScale = 0.080
 
 -- Scripts:
 
-local function ZSMODX_fake_script() -- visuals.LocalScript 
+local function PPDNLNZ_fake_script() -- visuals.LocalScript 
 	local script = Instance.new('LocalScript', visuals)
 
 	local textButton = script.Parent
@@ -265,8 +266,8 @@ local function ZSMODX_fake_script() -- visuals.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(ZSMODX_fake_script)()
-local function RPRNAAA_fake_script() -- main.LocalScript 
+coroutine.wrap(PPDNLNZ_fake_script)()
+local function CJUX_fake_script() -- main.LocalScript 
 	local script = Instance.new('LocalScript', main)
 
 	local textButton = script.Parent
@@ -278,8 +279,8 @@ local function RPRNAAA_fake_script() -- main.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(RPRNAAA_fake_script)()
-local function NKOBCGX_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(CJUX_fake_script)()
+local function SREPQ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local textButton = script.Parent
@@ -290,18 +291,16 @@ local function NKOBCGX_fake_script() -- TextButton.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(NKOBCGX_fake_script)()
-local function YMCPTGW_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(SREPQ_fake_script)()
+local function WYMDHE_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local textButton = script.Parent
 	local boy = game.Players.LocalPlayer.Character.Head
 	
 	local function onActivated()
-		while true do
-			for i, v in pairs(boy:GetDescendants()) do
-				if v.ClassName == "SurfaceGui" then v:destroy()
-				end
+		for i, v in pairs(boy:GetDescendants()) do
+			if v.ClassName == "SurfaceGui" then v:destroy()
 			end
 		end
 	end
@@ -310,8 +309,8 @@ local function YMCPTGW_fake_script() -- TextButton_2.LocalScript
 	game:GetDescendants()
 	
 end
-coroutine.wrap(YMCPTGW_fake_script)()
-local function BGJAC_fake_script() -- localplayer.LocalScript 
+coroutine.wrap(WYMDHE_fake_script)()
+local function FHDLR_fake_script() -- localplayer.LocalScript 
 	local script = Instance.new('LocalScript', localplayer)
 
 	local textButton = script.Parent
@@ -323,8 +322,8 @@ local function BGJAC_fake_script() -- localplayer.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(BGJAC_fake_script)()
-local function HWZYQVF_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(FHDLR_fake_script)()
+local function XGDC_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local textButton = game.Players.LocalPlayer.Character
@@ -336,8 +335,8 @@ local function HWZYQVF_fake_script() -- TextButton_4.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(HWZYQVF_fake_script)()
-local function JPECDS_fake_script() -- Frame.LocalScript 
+coroutine.wrap(XGDC_fake_script)()
+local function AQLQTJU_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -410,4 +409,4 @@ local function JPECDS_fake_script() -- Frame.LocalScript
 	
 	end)
 end
-coroutine.wrap(JPECDS_fake_script)()
+coroutine.wrap(AQLQTJU_fake_script)()
