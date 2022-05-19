@@ -243,155 +243,155 @@ TextButton_4.TextWrapped = true
 
 -- Scripts:
 
-local function APWETBJ_fake_script() -- visuals.LocalScript 
+local function RJLRN_fake_script() -- visuals.LocalScript 
 	local script = Instance.new('LocalScript', visuals)
 
 	local textButton = script.Parent
-	
+
 	local function onActivated()
 		script.Parent.Parent.main.Frame.Visible = false
 	end
-	
+
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(APWETBJ_fake_script)()
-local function OHETGZF_fake_script() -- main.LocalScript 
+coroutine.wrap(RJLRN_fake_script)()
+local function EIROFI_fake_script() -- main.LocalScript 
 	local script = Instance.new('LocalScript', main)
 
 	local textButton = script.Parent
-	
+
 	local function onActivated()
 		script.Parent.Frame.Visible = true
 	end
-	
+
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(OHETGZF_fake_script)()
-local function CQMBM_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(EIROFI_fake_script)()
+local function RFNQF_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local textButton = script.Parent
-	
+
 	local function onActivated()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/dascoolios/dascoolios/main/rhs%20breaker.lua", true))() 
 	end
-	
+
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(CQMBM_fake_script)()
-local function EYHTTBP_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(RFNQF_fake_script)()
+local function HINRU_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local man = game.Players.LocalPlayer.Name
-	
+
 	local textButton = script.Parent
-	
+
 	local function onActivated()
 		game.Workspace.man.Head:destroy()
 	end
-	
+
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(EYHTTBP_fake_script)()
-local function QLCRM_fake_script() -- localplayer.LocalScript 
+coroutine.wrap(HINRU_fake_script)()
+local function JYYJQ_fake_script() -- localplayer.LocalScript 
 	local script = Instance.new('LocalScript', localplayer)
 
 	local textButton = script.Parent
-	
+
 	local function onActivated()
 		script.Parent.Parent.main.Frame.Visible = false
 	end
-	
+
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(QLCRM_fake_script)()
-local function WCFZGJ_fake_script() -- Frame.LocalScript 
+coroutine.wrap(JYYJQ_fake_script)()
+local function WWPHOIG_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
-	
+
 	local frame = script.Parent
-	
-	
-	
+
+
+
 	local dragToggle = nil
-	
+
 	local dragSpeed = 0.001
-	
+
 	local dragStart = nil
-	
+
 	local startPos = nil
-	
-	
-	
+
+
+
 	local function updateInput(input)
-	
+
 		local delta = input.Position - dragStart
-	
+
 		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-	
+
 			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	
+
 		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-	
+
 	end
-	
-	
-	
+
+
+
 	frame.InputBegan:Connect(function(input)
-	
+
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-	
+
 			dragToggle = true
-	
+
 			dragStart = input.Position
-	
+
 			startPos = frame.Position
-	
+
 			input.Changed:Connect(function()
-	
+
 				if input.UserInputState == Enum.UserInputState.End then
-	
+
 					dragToggle = false
-	
+
 				end
-	
+
 			end)
-	
+
 		end
-	
+
 	end)
-	
-	
-	
+
+
+
 	UIS.InputChanged:Connect(function(input)
-	
+
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-	
+
 			if dragToggle then
-	
+
 				updateInput(input)
-	
+
 			end
-	
+
 		end
-	
+
 	end)
 end
-coroutine.wrap(WCFZGJ_fake_script)()
-local function FPXVFS_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(WWPHOIG_fake_script)()
+local function IXAA_fake_script() -- TextButton_4.chin1 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local textButton = script.Parent
-	
+
 	local function onActivated()
 		script.Parent.Parent.Frame.Visible = false
 		textButton.Text = "open"
 		script.Parent.chin.Disabled = false
 		script.Disabled = true
 	end
-	
+
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(FPXVFS_fake_script)()
+coroutine.wrap(IXAA_fake_script)()
 -- TextButton_4.chin is disabled.
