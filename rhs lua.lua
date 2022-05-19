@@ -35,7 +35,7 @@ Frame.ClipsDescendants = true
 Frame.Position = UDim2.new(0.181805804, 0, 0.0268456675, 0)
 Frame.Selectable = true
 Frame.Size = UDim2.new(0.0500000007, 300, 0.0500000007, 400)
-Frame.ZIndex = 2
+Frame.ZIndex = 1000000000
 
 Frame_2.Name = "Frame"
 Frame_2.Parent = Frame
@@ -254,7 +254,7 @@ Frame_7.SliceScale = 0.080
 
 -- Scripts:
 
-local function RXEDO_fake_script() -- visuals.LocalScript 
+local function RORLU_fake_script() -- visuals.LocalScript 
 	local script = Instance.new('LocalScript', visuals)
 
 	local textButton = script.Parent
@@ -266,8 +266,8 @@ local function RXEDO_fake_script() -- visuals.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(RXEDO_fake_script)()
-local function AHPGC_fake_script() -- main.LocalScript 
+coroutine.wrap(RORLU_fake_script)()
+local function CXVNUWG_fake_script() -- main.LocalScript 
 	local script = Instance.new('LocalScript', main)
 
 	local textButton = script.Parent
@@ -279,8 +279,8 @@ local function AHPGC_fake_script() -- main.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(AHPGC_fake_script)()
-local function PXZFGA_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(CXVNUWG_fake_script)()
+local function YENIQC_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local textButton = script.Parent
@@ -291,8 +291,8 @@ local function PXZFGA_fake_script() -- TextButton.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(PXZFGA_fake_script)()
-local function EDMQS_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(YENIQC_fake_script)()
+local function HQCGN_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local textButton = script.Parent
@@ -312,8 +312,8 @@ local function EDMQS_fake_script() -- TextButton_2.LocalScript
 	game:GetDescendants()
 	
 end
-coroutine.wrap(EDMQS_fake_script)()
-local function SKRIUVN_fake_script() -- localplayer.LocalScript 
+coroutine.wrap(HQCGN_fake_script)()
+local function MMJE_fake_script() -- localplayer.LocalScript 
 	local script = Instance.new('LocalScript', localplayer)
 
 	local textButton = script.Parent
@@ -325,8 +325,8 @@ local function SKRIUVN_fake_script() -- localplayer.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(SKRIUVN_fake_script)()
-local function EWPAIOM_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(MMJE_fake_script)()
+local function NVIG_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local textButton = game.Players.LocalPlayer.Character
@@ -338,8 +338,8 @@ local function EWPAIOM_fake_script() -- TextButton_4.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(EWPAIOM_fake_script)()
-local function WSUVG_fake_script() -- Frame.LocalScript 
+coroutine.wrap(NVIG_fake_script)()
+local function CSEXQ_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -412,4 +412,4 @@ local function WSUVG_fake_script() -- Frame.LocalScript
 	
 	end)
 end
-coroutine.wrap(WSUVG_fake_script)()
+coroutine.wrap(CSEXQ_fake_script)()
