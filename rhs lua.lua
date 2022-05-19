@@ -16,8 +16,10 @@ local TextButton_2 = Instance.new("TextButton")
 local TextButton_3 = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
-local Frame_6 = Instance.new("ImageLabel")
+local localplayer = Instance.new("TextButton")
 local AAAAB = Instance.new("ImageLabel")
+local Frame_6 = Instance.new("ImageLabel")
+local TextButton_4 = Instance.new("TextButton")
 
 --Properties:
 
@@ -79,6 +81,7 @@ visuals.Size = UDim2.new(0, 75, 0, 25)
 visuals.Font = Enum.Font.Code
 visuals.Text = "visuals"
 visuals.TextColor3 = Color3.fromRGB(0, 0, 0)
+visuals.TextScaled = true
 visuals.TextSize = 18.000
 visuals.TextStrokeColor3 = Color3.fromRGB(72, 72, 72)
 visuals.TextStrokeTransparency = 0.000
@@ -94,6 +97,7 @@ main.Size = UDim2.new(0, 75, 0, 25)
 main.Font = Enum.Font.Code
 main.Text = "main"
 main.TextColor3 = Color3.fromRGB(0, 0, 0)
+main.TextScaled = true
 main.TextSize = 18.000
 main.TextStrokeColor3 = Color3.fromRGB(72, 72, 72)
 main.TextStrokeTransparency = 0.000
@@ -106,46 +110,49 @@ Frame_5.Size = UDim2.new(0, 100, 0, 100)
 
 TextButton.Parent = Frame_5
 TextButton.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+TextButton.BackgroundTransparency = 0.400
 TextButton.BorderColor3 = Color3.fromRGB(42, 42, 42)
-TextButton.BorderSizePixel = 5
+TextButton.BorderSizePixel = 7
 TextButton.Position = UDim2.new(0.49333331, 0, 0.5, 0)
 TextButton.Size = UDim2.new(0, 200, 0, 50)
-TextButton.Font = Enum.Font.Code
+TextButton.Font = Enum.Font.Nunito
 TextButton.Text = "tpose reality breaker"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
-TextButton.TextStrokeColor3 = Color3.fromRGB(50, 50, 50)
+TextButton.TextStrokeColor3 = Color3.fromRGB(33, 33, 33)
 TextButton.TextStrokeTransparency = 0.000
 TextButton.TextWrapped = true
 
 TextButton_2.Parent = Frame_5
 TextButton_2.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+TextButton_2.BackgroundTransparency = 0.400
 TextButton_2.BorderColor3 = Color3.fromRGB(42, 42, 42)
-TextButton_2.BorderSizePixel = 5
+TextButton_2.BorderSizePixel = 7
 TextButton_2.Position = UDim2.new(0.49000001, 0, 1.55999994, 0)
 TextButton_2.Size = UDim2.new(0, 200, 0, 50)
-TextButton_2.Font = Enum.Font.Code
+TextButton_2.Font = Enum.Font.Nunito
 TextButton_2.Text = "hide name"
 TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.TextScaled = true
 TextButton_2.TextSize = 14.000
-TextButton_2.TextStrokeColor3 = Color3.fromRGB(50, 50, 50)
+TextButton_2.TextStrokeColor3 = Color3.fromRGB(33, 33, 33)
 TextButton_2.TextStrokeTransparency = 0.000
 TextButton_2.TextWrapped = true
 
 TextButton_3.Parent = Frame_5
 TextButton_3.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+TextButton_3.BackgroundTransparency = 0.400
 TextButton_3.BorderColor3 = Color3.fromRGB(42, 42, 42)
-TextButton_3.BorderSizePixel = 5
+TextButton_3.BorderSizePixel = 7
 TextButton_3.Position = UDim2.new(0.5, 0, 2.65999985, 0)
 TextButton_3.Size = UDim2.new(0, 200, 0, 50)
-TextButton_3.Font = Enum.Font.Code
+TextButton_3.Font = Enum.Font.Nunito
 TextButton_3.Text = "not for use"
 TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_3.TextScaled = true
 TextButton_3.TextSize = 14.000
-TextButton_3.TextStrokeColor3 = Color3.fromRGB(50, 50, 50)
+TextButton_3.TextStrokeColor3 = Color3.fromRGB(33, 33, 33)
 TextButton_3.TextStrokeTransparency = 0.000
 TextButton_3.TextWrapped = true
 
@@ -156,7 +163,7 @@ TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(0, 0, 0.970566273, 0)
 TextLabel.Size = UDim2.new(0, 300, 0, 11)
 TextLabel.Font = Enum.Font.Code
-TextLabel.Text = "version 0.2.5 by io#4884 ok thank you xx"
+TextLabel.Text = "version 2.0.1 by io#4884 ok thank you xx"
 TextLabel.TextColor3 = Color3.fromRGB(177, 177, 177)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 12.000
@@ -177,19 +184,21 @@ TextLabel_2.TextSize = 18.000
 TextLabel_2.TextStrokeTransparency = 0.000
 TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
 
-Frame_6.Name = "Frame"
-Frame_6.Parent = Frame
-Frame_6.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-Frame_6.BackgroundTransparency = 1.000
-Frame_6.BorderColor3 = Color3.fromRGB(53, 53, 53)
-Frame_6.BorderSizePixel = 2
-Frame_6.Position = UDim2.new(0.0350963771, 0, 0.0114352107, 0)
-Frame_6.Rotation = 180.000
-Frame_6.Size = UDim2.new(0, 310, 0, 43)
-Frame_6.Image = "rbxassetid://7122106756"
-Frame_6.ImageTransparency = 0.600
-Frame_6.SliceCenter = Rect.new(100, 100, 100, 100)
-Frame_6.SliceScale = 0.080
+localplayer.Name = "localplayer"
+localplayer.Parent = Frame_4
+localplayer.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+localplayer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+localplayer.BorderSizePixel = 2
+localplayer.Position = UDim2.new(0.50666666, -1, 0.0450000018, 0)
+localplayer.Size = UDim2.new(0, 75, 0, 25)
+localplayer.Font = Enum.Font.Code
+localplayer.Text = "localplayer"
+localplayer.TextColor3 = Color3.fromRGB(0, 0, 0)
+localplayer.TextScaled = true
+localplayer.TextSize = 18.000
+localplayer.TextStrokeColor3 = Color3.fromRGB(72, 72, 72)
+localplayer.TextStrokeTransparency = 0.000
+localplayer.TextWrapped = true
 
 AAAAB.Name = "AAAAB"
 AAAAB.Parent = Frame
@@ -204,9 +213,37 @@ AAAAB.ImageTransparency = 0.500
 AAAAB.SliceCenter = Rect.new(100, 100, 100, 100)
 AAAAB.SliceScale = 0.080
 
+Frame_6.Name = "Frame"
+Frame_6.Parent = Frame
+Frame_6.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Frame_6.BackgroundTransparency = 1.000
+Frame_6.BorderColor3 = Color3.fromRGB(53, 53, 53)
+Frame_6.BorderSizePixel = 2
+Frame_6.Position = UDim2.new(0.0529653206, 0, 0.0144901471, 0)
+Frame_6.Rotation = 180.000
+Frame_6.Size = UDim2.new(0, 303, 0, 22)
+Frame_6.Image = "rbxassetid://7122106756"
+Frame_6.ImageTransparency = 0.600
+Frame_6.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame_6.SliceScale = 0.080
+
+TextButton_4.Parent = ScreenGui
+TextButton_4.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 5
+TextButton_4.Position = UDim2.new(0.680491567, 0, 0.0355140157, 0)
+TextButton_4.Size = UDim2.new(0, 87, 0, 22)
+TextButton_4.ZIndex = 6
+TextButton_4.Font = Enum.Font.Code
+TextButton_4.Text = "close"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+
 -- Scripts:
 
-local function FVCS_fake_script() -- visuals.LocalScript 
+local function APWETBJ_fake_script() -- visuals.LocalScript 
 	local script = Instance.new('LocalScript', visuals)
 
 	local textButton = script.Parent
@@ -217,8 +254,8 @@ local function FVCS_fake_script() -- visuals.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(FVCS_fake_script)()
-local function RDJFAV_fake_script() -- main.LocalScript 
+coroutine.wrap(APWETBJ_fake_script)()
+local function OHETGZF_fake_script() -- main.LocalScript 
 	local script = Instance.new('LocalScript', main)
 
 	local textButton = script.Parent
@@ -229,8 +266,8 @@ local function RDJFAV_fake_script() -- main.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(RDJFAV_fake_script)()
-local function RKNOQZ_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(OHETGZF_fake_script)()
+local function CQMBM_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local textButton = script.Parent
@@ -241,8 +278,8 @@ local function RKNOQZ_fake_script() -- TextButton.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(RKNOQZ_fake_script)()
-local function DXXFWA_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(CQMBM_fake_script)()
+local function EYHTTBP_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local man = game.Players.LocalPlayer.Name
@@ -255,8 +292,20 @@ local function DXXFWA_fake_script() -- TextButton_2.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(DXXFWA_fake_script)()
-local function FPUNNOE_fake_script() -- Frame.LocalScript 
+coroutine.wrap(EYHTTBP_fake_script)()
+local function QLCRM_fake_script() -- localplayer.LocalScript 
+	local script = Instance.new('LocalScript', localplayer)
+
+	local textButton = script.Parent
+	
+	local function onActivated()
+		script.Parent.Parent.main.Frame.Visible = false
+	end
+	
+	textButton.Activated:Connect(onActivated)
+end
+coroutine.wrap(QLCRM_fake_script)()
+local function WCFZGJ_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -329,4 +378,20 @@ local function FPUNNOE_fake_script() -- Frame.LocalScript
 	
 	end)
 end
-coroutine.wrap(FPUNNOE_fake_script)()
+coroutine.wrap(WCFZGJ_fake_script)()
+local function FPXVFS_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local textButton = script.Parent
+	
+	local function onActivated()
+		script.Parent.Parent.Frame.Visible = false
+		textButton.Text = "open"
+		script.Parent.chin.Disabled = false
+		script.Disabled = true
+	end
+	
+	textButton.Activated:Connect(onActivated)
+end
+coroutine.wrap(FPXVFS_fake_script)()
+-- TextButton_4.chin is disabled.
