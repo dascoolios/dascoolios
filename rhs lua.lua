@@ -254,7 +254,7 @@ Frame_7.SliceScale = 0.080
 
 -- Scripts:
 
-local function PPDNLNZ_fake_script() -- visuals.LocalScript 
+local function RXEDO_fake_script() -- visuals.LocalScript 
 	local script = Instance.new('LocalScript', visuals)
 
 	local textButton = script.Parent
@@ -266,8 +266,8 @@ local function PPDNLNZ_fake_script() -- visuals.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(PPDNLNZ_fake_script)()
-local function CJUX_fake_script() -- main.LocalScript 
+coroutine.wrap(RXEDO_fake_script)()
+local function AHPGC_fake_script() -- main.LocalScript 
 	local script = Instance.new('LocalScript', main)
 
 	local textButton = script.Parent
@@ -279,8 +279,8 @@ local function CJUX_fake_script() -- main.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(CJUX_fake_script)()
-local function SREPQ_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(AHPGC_fake_script)()
+local function PXZFGA_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local textButton = script.Parent
@@ -291,26 +291,29 @@ local function SREPQ_fake_script() -- TextButton.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(SREPQ_fake_script)()
-local function WYMDHE_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(PXZFGA_fake_script)()
+local function EDMQS_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local textButton = script.Parent
 	local boy = game.Players.LocalPlayer.Character.Head
 	
 	local function onActivated()
-		for i, v in pairs(boy:GetDescendants()) do
-			if v.ClassName == "SurfaceGui" then v:destroy()
-			end
-		end
+		local Char = game.Players.LocalPlayer.Character
+	
+		Char.Head.Mesh.Parent = game.CoreGui
+		Char.Head:ClearAllChildren()
+		game.CoreGui.Mesh.Parent = Char.Head
+		Char.Head.Parent = game.Lighting
+		game.Lighting.Head.Parent = Char	
 	end
 	
 	textButton.Activated:Connect(onActivated)
 	game:GetDescendants()
 	
 end
-coroutine.wrap(WYMDHE_fake_script)()
-local function FHDLR_fake_script() -- localplayer.LocalScript 
+coroutine.wrap(EDMQS_fake_script)()
+local function SKRIUVN_fake_script() -- localplayer.LocalScript 
 	local script = Instance.new('LocalScript', localplayer)
 
 	local textButton = script.Parent
@@ -322,21 +325,21 @@ local function FHDLR_fake_script() -- localplayer.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(FHDLR_fake_script)()
-local function XGDC_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(SKRIUVN_fake_script)()
+local function EWPAIOM_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local textButton = game.Players.LocalPlayer.Character
 	
 	local function onActivated()
-		game.StarterPlayer.CharacterWalkSpeed = 100
+		game.Players.LocalPlayer.Character.Humanoi.Walkspeed = 100
 	end
 	
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(XGDC_fake_script)()
-local function AQLQTJU_fake_script() -- Frame.LocalScript 
+coroutine.wrap(EWPAIOM_fake_script)()
+local function WSUVG_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -409,4 +412,4 @@ local function AQLQTJU_fake_script() -- Frame.LocalScript
 	
 	end)
 end
-coroutine.wrap(AQLQTJU_fake_script)()
+coroutine.wrap(WSUVG_fake_script)()
