@@ -1,4 +1,4 @@
---pro rhs gui 
+--pro
 
 -- Instances:
 
@@ -15,9 +15,9 @@ local TextButton_2 = Instance.new("TextButton")
 local TextButton_3 = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
+local AABAB = Instance.new("ImageLabel")
+local AAAAB = Instance.new("ImageLabel")
 local Frame_6 = Instance.new("ImageLabel")
-local Frame_7 = Instance.new("ImageLabel")
-local Frame_8 = Instance.new("ImageLabel")
 
 --Properties:
 
@@ -155,7 +155,7 @@ TextLabel.Parent = Frame_4
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0, 0, 0.971, 0)
+TextLabel.Position = UDim2.new(0, 0, 0.970566273, 0)
 TextLabel.Size = UDim2.new(0, 300, 0, 11)
 TextLabel.Font = Enum.Font.Code
 TextLabel.Text = "version 0.0.1 by io#4884 ok thank you xx"
@@ -179,48 +179,48 @@ TextLabel_2.TextSize = 18.000
 TextLabel_2.TextStrokeTransparency = 0.000
 TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
 
+AABAB.Name = "AABAB"
+AABAB.Parent = Frame
+AABAB.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+AABAB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AABAB.Position = UDim2.new(0.0351127721, 0, 0.928132117, 0)
+AABAB.Size = UDim2.new(0, 310, 0, 2)
+AABAB.ZIndex = 2
+AABAB.ImageColor3 = Color3.fromRGB(0, 0, 0)
+AABAB.ScaleType = Enum.ScaleType.Slice
+AABAB.SliceCenter = Rect.new(100, 100, 100, 100)
+AABAB.SliceScale = 0.080
+
+AAAAB.Name = "AAAAB"
+AAAAB.Parent = Frame
+AAAAB.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+AAAAB.BackgroundTransparency = 1.000
+AAAAB.BorderColor3 = Color3.fromRGB(53, 53, 53)
+AAAAB.BorderSizePixel = 2
+AAAAB.Position = UDim2.new(0.0381016359, 0, 0.878453374, 0)
+AAAAB.Size = UDim2.new(0, 310, 0, 43)
+AAAAB.Image = "rbxassetid://7122106756"
+AAAAB.ImageTransparency = 0.500
+AAAAB.SliceCenter = Rect.new(100, 100, 100, 100)
+AAAAB.SliceScale = 0.080
+
 Frame_6.Name = "Frame"
 Frame_6.Parent = Frame
-Frame_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Frame_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_6.Position = UDim2.new(0.0351127721, 0, 0.928132117, 0)
-Frame_6.Size = UDim2.new(0, 310, 0, 2)
-Frame_6.ZIndex = 2
-Frame_6.ImageColor3 = Color3.fromRGB(0, 0, 0)
-Frame_6.ScaleType = Enum.ScaleType.Slice
+Frame_6.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Frame_6.BackgroundTransparency = 1.000
+Frame_6.BorderColor3 = Color3.fromRGB(53, 53, 53)
+Frame_6.BorderSizePixel = 2
+Frame_6.Position = UDim2.new(0.0350963771, 0, 0.0114352107, 0)
+Frame_6.Rotation = 180.000
+Frame_6.Size = UDim2.new(0, 310, 0, 43)
+Frame_6.Image = "rbxassetid://7122106756"
+Frame_6.ImageTransparency = 0.600
 Frame_6.SliceCenter = Rect.new(100, 100, 100, 100)
 Frame_6.SliceScale = 0.080
 
-Frame_7.Name = "Frame"
-Frame_7.Parent = Frame
-Frame_7.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-Frame_7.BackgroundTransparency = 1.000
-Frame_7.BorderColor3 = Color3.fromRGB(53, 53, 53)
-Frame_7.BorderSizePixel = 2
-Frame_7.Position = UDim2.new(0.0381016359, 0, 0.878453374, 0)
-Frame_7.Size = UDim2.new(0, 310, 0, 43)
-Frame_7.Image = "rbxassetid://7122106756"
-Frame_7.ImageTransparency = 0.500
-Frame_7.SliceCenter = Rect.new(100, 100, 100, 100)
-Frame_7.SliceScale = 0.080
-
-Frame_8.Name = "Frame"
-Frame_8.Parent = Frame
-Frame_8.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-Frame_8.BackgroundTransparency = 1.000
-Frame_8.BorderColor3 = Color3.fromRGB(53, 53, 53)
-Frame_8.BorderSizePixel = 2
-Frame_8.Position = UDim2.new(0.0350963771, 0, 0.0114352107, 0)
-Frame_8.Rotation = 180.000
-Frame_8.Size = UDim2.new(0, 310, 0, 43)
-Frame_8.Image = "rbxassetid://7122106756"
-Frame_8.ImageTransparency = 0.600
-Frame_8.SliceCenter = Rect.new(100, 100, 100, 100)
-Frame_8.SliceScale = 0.080
-
 -- Scripts:
 
-local function GOQAO_fake_script() -- visuals.LocalScript 
+local function CUEU_fake_script() -- visuals.LocalScript 
 	local script = Instance.new('LocalScript', visuals)
 
 	local textButton = script.Parent
@@ -231,8 +231,8 @@ local function GOQAO_fake_script() -- visuals.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(GOQAO_fake_script)()
-local function PMKWFFB_fake_script() -- main.LocalScript 
+coroutine.wrap(CUEU_fake_script)()
+local function PEOAR_fake_script() -- main.LocalScript 
 	local script = Instance.new('LocalScript', main)
 
 	local textButton = script.Parent
@@ -243,8 +243,8 @@ local function PMKWFFB_fake_script() -- main.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(PMKWFFB_fake_script)()
-local function LPCGB_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(PEOAR_fake_script)()
+local function SGYASG_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local textButton = script.Parent
@@ -255,8 +255,8 @@ local function LPCGB_fake_script() -- TextButton.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(LPCGB_fake_script)()
-local function CTNIOX_fake_script() -- Frame.LocalScript 
+coroutine.wrap(SGYASG_fake_script)()
+local function JWZZE_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -329,4 +329,4 @@ local function CTNIOX_fake_script() -- Frame.LocalScript
 	
 	end)
 end
-coroutine.wrap(CTNIOX_fake_script)()
+coroutine.wrap(JWZZE_fake_script)()
