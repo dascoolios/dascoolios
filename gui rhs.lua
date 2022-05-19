@@ -1,4 +1,4 @@
---pro
+--pro rhs
 
 -- Instances:
 
@@ -16,7 +16,6 @@ local TextButton_3 = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local AABAB = Instance.new("ImageLabel")
-local AAAAB = Instance.new("ImageLabel")
 local Frame_6 = Instance.new("ImageLabel")
 
 --Properties:
@@ -183,26 +182,13 @@ AABAB.Name = "AABAB"
 AABAB.Parent = Frame
 AABAB.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 AABAB.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AABAB.Position = UDim2.new(0.035, 0, 0.928, 0)
+AABAB.Position = UDim2.new(0.0321057066, 0, 0.900012612, 0)
 AABAB.Size = UDim2.new(0, 310, 0, 2)
 AABAB.ZIndex = 2
 AABAB.ImageColor3 = Color3.fromRGB(0, 0, 0)
 AABAB.ScaleType = Enum.ScaleType.Slice
 AABAB.SliceCenter = Rect.new(100, 100, 100, 100)
 AABAB.SliceScale = 0.080
-
-AAAAB.Name = "AAAAB"
-AAAAB.Parent = Frame
-AAAAB.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-AAAAB.BackgroundTransparency = 1.000
-AAAAB.BorderColor3 = Color3.fromRGB(53, 53, 53)
-AAAAB.BorderSizePixel = 2
-AAAAB.Position = UDim2.new(0.038, 0, 0.878, 0)
-AAAAB.Size = UDim2.new(0, 310, 0, 43)
-AAAAB.Image = "rbxassetid://7122106756"
-AAAAB.ImageTransparency = 0.500
-AAAAB.SliceCenter = Rect.new(100, 100, 100, 100)
-AAAAB.SliceScale = 0.080
 
 Frame_6.Name = "Frame"
 Frame_6.Parent = Frame
@@ -220,7 +206,7 @@ Frame_6.SliceScale = 0.080
 
 -- Scripts:
 
-local function CUEU_fake_script() -- visuals.LocalScript 
+local function KMXV_fake_script() -- visuals.LocalScript 
 	local script = Instance.new('LocalScript', visuals)
 
 	local textButton = script.Parent
@@ -231,8 +217,8 @@ local function CUEU_fake_script() -- visuals.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(CUEU_fake_script)()
-local function PEOAR_fake_script() -- main.LocalScript 
+coroutine.wrap(KMXV_fake_script)()
+local function FUBAS_fake_script() -- main.LocalScript 
 	local script = Instance.new('LocalScript', main)
 
 	local textButton = script.Parent
@@ -243,8 +229,8 @@ local function PEOAR_fake_script() -- main.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(PEOAR_fake_script)()
-local function SGYASG_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(FUBAS_fake_script)()
+local function QNOEQCX_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local textButton = script.Parent
@@ -255,8 +241,8 @@ local function SGYASG_fake_script() -- TextButton.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(SGYASG_fake_script)()
-local function JWZZE_fake_script() -- Frame.LocalScript 
+coroutine.wrap(QNOEQCX_fake_script)()
+local function IOCA_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -329,4 +315,4 @@ local function JWZZE_fake_script() -- Frame.LocalScript
 	
 	end)
 end
-coroutine.wrap(JWZZE_fake_script)()
+coroutine.wrap(IOCA_fake_script)()
