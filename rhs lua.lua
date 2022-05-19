@@ -17,8 +17,10 @@ local TextButton_3 = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local localplayer = Instance.new("TextButton")
+local Frame_6 = Instance.new("Frame")
+local TextButton_4 = Instance.new("TextButton")
 local AAAAB = Instance.new("ImageLabel")
-local Frame_6 = Instance.new("ImageLabel")
+local Frame_7 = Instance.new("ImageLabel")
 
 --Properties:
 
@@ -199,6 +201,29 @@ localplayer.TextStrokeColor3 = Color3.fromRGB(72, 72, 72)
 localplayer.TextStrokeTransparency = 0.000
 localplayer.TextWrapped = true
 
+Frame_6.Parent = localplayer
+Frame_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_6.BackgroundTransparency = 1.000
+Frame_6.Position = UDim2.new(-2.01333332, 0, 0, 0)
+Frame_6.Size = UDim2.new(0, 100, 0, 100)
+Frame_6.Visible = false
+
+TextButton_4.Parent = Frame_6
+TextButton_4.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
+TextButton_4.BackgroundTransparency = 0.400
+TextButton_4.BorderColor3 = Color3.fromRGB(42, 42, 42)
+TextButton_4.BorderSizePixel = 7
+TextButton_4.Position = UDim2.new(0.483333319, 0, 0.5, 0)
+TextButton_4.Size = UDim2.new(0, 200, 0, 50)
+TextButton_4.Font = Enum.Font.Nunito
+TextButton_4.Text = "speedhacks"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextStrokeColor3 = Color3.fromRGB(33, 33, 33)
+TextButton_4.TextStrokeTransparency = 0.000
+TextButton_4.TextWrapped = true
+
 AAAAB.Name = "AAAAB"
 AAAAB.Parent = Frame
 AAAAB.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
@@ -212,47 +237,49 @@ AAAAB.ImageTransparency = 0.500
 AAAAB.SliceCenter = Rect.new(100, 100, 100, 100)
 AAAAB.SliceScale = 0.080
 
-Frame_6.Name = "Frame"
-Frame_6.Parent = Frame
-Frame_6.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-Frame_6.BackgroundTransparency = 1.000
-Frame_6.BorderColor3 = Color3.fromRGB(53, 53, 53)
-Frame_6.BorderSizePixel = 2
-Frame_6.Position = UDim2.new(0.0529653206, 0, 0.0144901471, 0)
-Frame_6.Rotation = 180.000
-Frame_6.Size = UDim2.new(0, 303, 0, 22)
-Frame_6.Image = "rbxassetid://7122106756"
-Frame_6.ImageTransparency = 0.600
-Frame_6.SliceCenter = Rect.new(100, 100, 100, 100)
-Frame_6.SliceScale = 0.080
+Frame_7.Name = "Frame"
+Frame_7.Parent = Frame
+Frame_7.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Frame_7.BackgroundTransparency = 1.000
+Frame_7.BorderColor3 = Color3.fromRGB(53, 53, 53)
+Frame_7.BorderSizePixel = 2
+Frame_7.Position = UDim2.new(0.0529653206, 0, 0.0144901471, 0)
+Frame_7.Rotation = 180.000
+Frame_7.Size = UDim2.new(0, 303, 0, 22)
+Frame_7.Image = "rbxassetid://7122106756"
+Frame_7.ImageTransparency = 0.600
+Frame_7.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame_7.SliceScale = 0.080
 
 -- Scripts:
 
-local function VKQO_fake_script() -- visuals.LocalScript 
+local function ZSMODX_fake_script() -- visuals.LocalScript 
 	local script = Instance.new('LocalScript', visuals)
 
 	local textButton = script.Parent
 	
 	local function onActivated()
 		script.Parent.Parent.main.Frame.Visible = false
+		script.Parent.Parent.localplayer.Frame.Visible = false
 	end
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(VKQO_fake_script)()
-local function CZPPYN_fake_script() -- main.LocalScript 
+coroutine.wrap(ZSMODX_fake_script)()
+local function RPRNAAA_fake_script() -- main.LocalScript 
 	local script = Instance.new('LocalScript', main)
 
 	local textButton = script.Parent
 	
 	local function onActivated()
 		script.Parent.Frame.Visible = true
+		script.Parent.Parent.localplayer.Frame.Visible = false
 	end
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(CZPPYN_fake_script)()
-local function MBDFH_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(RPRNAAA_fake_script)()
+local function NKOBCGX_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local textButton = script.Parent
@@ -263,34 +290,54 @@ local function MBDFH_fake_script() -- TextButton.LocalScript
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(MBDFH_fake_script)()
-local function TEIBKDQ_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(NKOBCGX_fake_script)()
+local function YMCPTGW_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
-	local man = game.Players.LocalPlayer.Name
-	
 	local textButton = script.Parent
+	local boy = game.Players.LocalPlayer.Character.Head
 	
 	local function onActivated()
-		game.Workspace.man.Head:destroy()
+		while true do
+			for i, v in pairs(boy:GetDescendants()) do
+				if v.ClassName == "SurfaceGui" then v:destroy()
+				end
+			end
+		end
 	end
 	
 	textButton.Activated:Connect(onActivated)
+	game:GetDescendants()
+	
 end
-coroutine.wrap(TEIBKDQ_fake_script)()
-local function APZM_fake_script() -- localplayer.LocalScript 
+coroutine.wrap(YMCPTGW_fake_script)()
+local function BGJAC_fake_script() -- localplayer.LocalScript 
 	local script = Instance.new('LocalScript', localplayer)
 
 	local textButton = script.Parent
 	
 	local function onActivated()
 		script.Parent.Parent.main.Frame.Visible = false
+		script.Parent.Frame.Visible = true
 	end
 	
 	textButton.Activated:Connect(onActivated)
 end
-coroutine.wrap(APZM_fake_script)()
-local function RXWSAP_fake_script() -- Frame.LocalScript 
+coroutine.wrap(BGJAC_fake_script)()
+local function HWZYQVF_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local textButton = game.Players.LocalPlayer.Character
+	
+	local function onActivated()
+		game.StarterPlayer.CharacterWalkSpeed = 100
+	end
+	
+	
+	textButton.Activated:Connect(onActivated)
+end
+coroutine.wrap(HWZYQVF_fake_script)()
+local function JPECDS_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UIS = game:GetService('UserInputService')
@@ -363,19 +410,4 @@ local function RXWSAP_fake_script() -- Frame.LocalScript
 	
 	end)
 end
-coroutine.wrap(RXWSAP_fake_script)()
-local function ZPONMN_fake_script() -- Frame.shift 
-	local script = Instance.new('LocalScript', Frame)
-
-	function keyPressed(input)
-		if input.KeyCode == Enum.KeyCode.RightShift then
-			script.Parent.Visible = false
-			script.Disabled = true
-			script.Parent.shiftrev.Disabled = false
-		end
-	end
-	
-	game:GetService("UserInputService").InputBegan:Connect(keyPressed)
-end
-coroutine.wrap(ZPONMN_fake_script)()
--- Frame.shiftrev is disabled.
+coroutine.wrap(JPECDS_fake_script)()
